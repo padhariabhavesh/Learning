@@ -1,3 +1,4 @@
 # Projects
 # Upload the project code of python and datascience.
-# ChatBot: https://github.com/padhariabhavesh/Projects/tree/main/ChatBot
+
+# LeetCode Solution: https://github.com/padhariabhavesh/Projects/tree/main/LeetCode%20Solutions
