@@ -13,10 +13,6 @@ Return the minimum number of minutes that must elapse until no cell has a fresh 
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
 
-        '''
-        Abu Shoeb modified on 2020-07-25
-        My Code https://github.com/abushoeb/leetcode/blob/master/994-rotting-oranges.ipynb
-        '''
 
         fresh = set()
         rotten = set()
