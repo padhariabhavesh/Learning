@@ -6,3 +6,39 @@ Insert newInterval into intervals such that intervals is still sorted in ascendi
 Return intervals after the insertion.
 """
 
+
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        retIntervals = []
+        newIntAdded = False
+
+        # iterate over every interval in list of intervals
+        for interval in intervals:
+            # four cases
+
+            # no overlap
+            if (interval[1] < newInterval[0] or interval[0] > newInterval[1]):
+                if (not newIntAdded and interval[0] > newInterval[1]):
+                    retIntervals.append(newInterval)
+                    newIntAdded = True
+                retIntervals.append(interval)
+                continue
+
+            # new interval starts inside
+            if (newInterval[0] >= interval[0] and newInterval[0] <= interval[1]):
+                newInterval[0] = interval[0]
+
+            # new interval ends inside
+            if (newInterval[1] >= interval[0] and newInterval[1] <= interval[1] and not newIntAdded):
+                newInterval[1] = interval[1]
+                retIntervals.append(newInterval)
+                newIntAdded = True
+
+            # new interval surrounds
+            # do nothing
+
+        # if new interval never got added, add it
+        if (not newIntAdded):
+            retIntervals.append(newInterval)
+
+        return retIntervals
