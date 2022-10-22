@@ -31,3 +31,4 @@ class Solution:
                 min_substring = s[l:r + 1]
 
         return min_substring if len(min_substring) <= len(s) else
+
