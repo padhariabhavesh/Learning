@@ -37,3 +37,4 @@ class Solution:
         ans[ball] = i
 
     return ans
+
