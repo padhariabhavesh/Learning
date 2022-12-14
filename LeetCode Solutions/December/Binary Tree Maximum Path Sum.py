@@ -41,3 +41,4 @@ class Solution(object):
         max_single_path = max(node.val + max(ls, rs), node.val)
         self.msum = max(self.msum, max_single_path, node.val + ls + rs)
         return max_single_path
+
