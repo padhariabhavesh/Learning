@@ -10,6 +10,7 @@ Omit all the empty parenthesis pairs that do not affect the one-to-one mapping r
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
 class Solution:
     def tree2str(self, root):
         # Step 1: Base case - if the root is None, return an empty string
