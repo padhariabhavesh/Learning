@@ -18,4 +18,4 @@ class Solution:
             if moves == 0: return 0
             return recur(r+1,c, moves-1) + recur(r-1,c,moves-1) + recur(r,c-1, moves-1) + recur(r,c+1, moves-1)
         
-        return recur(startRow, startColumn, maxMove) % MOD
+        return recur(startRow, startColumn, maxMove) % MODx``
