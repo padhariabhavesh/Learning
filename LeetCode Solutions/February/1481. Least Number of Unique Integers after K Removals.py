@@ -17,4 +17,4 @@ class Solution:
             else:
                 break
 
-        return len(freq_map)
+        return len(freq_map) 
