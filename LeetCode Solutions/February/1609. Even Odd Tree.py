@@ -1,5 +1,5 @@
 '''
-1609. Even Odd Tree python solution
+1609. Even Odd Tree 
 
 A binary tree is named Even-Odd if it meets the following conditions:
 
